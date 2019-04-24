@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form>
+            <p class="count">0</p>
+            <button type="button" class="click" name="button">Envoyer</button>
+        </form>
+        <script src="assets\js\jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var valeur = 1;
+                $('.click').click(function(){
+                    $('.count').text(valeur++);
+                })
+            })
+        </script>
+    </body>
+</html>
